@@ -1,0 +1,33 @@
+{
+  "name": "@wolfe-labs/AMORAD",
+  "description": "",
+  "sourcePath": "src",
+  "outputPath": "out",
+  "builds": {
+    "hooks/update": {
+      "name": "hooks/update",
+      "slots": {}
+    }
+  },
+  "targets": {
+    "development": {
+      "name": "development",
+      "handleErrors": true,
+      "minify": false
+    },
+    "production": {
+      "name": "production",
+      "handleErrors": false,
+      "minify": true
+    }
+  },
+  "libs": [
+    {
+      "id": "@wolfe-labs/Kernel",
+      "path": "libs\\@wolfe-labs\\Kernel",
+      "remote": {
+        "git": "https://github.com/wolfe-labs/DU-Kernel"
+      }
+    }
+  ]
+}
